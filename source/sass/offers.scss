@@ -1,0 +1,31 @@
+@import "./title.scss";
+
+.offers {
+  background-color: $color-secondary--lightest;
+}
+
+.offers__title {
+  @include title;
+}
+
+.offers__week {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $color-main;
+  text-transform: uppercase;
+}
+
+.offers__desc {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $color-secondary--light;
+}
+
+.offers__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $color-secondary;
+}

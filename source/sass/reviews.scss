@@ -1,0 +1,35 @@
+@import "./title.scss";
+
+.reviews {
+  background-color: $color-secondary--lightest;
+  color: $color-secondary--light;
+  font-weight: 700;
+}
+
+.reviews__title {
+  @include title;
+}
+
+.reviews__text {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $color-secondary--light;
+}
+
+.reviews__author-name {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $color-secondary;
+  font-style: normal;
+  display: block;
+}
+
+.reviews__author-nick {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $color-secondary--light;
+  display: block;
+}

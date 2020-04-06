@@ -1,0 +1,11 @@
+@import "./title.scss";
+
+.features {
+  background-color: $color-secondary--lightest;
+  color: $color-secondary;
+  font-weight: 700;
+}
+
+.features__title {
+  @include title;
+}

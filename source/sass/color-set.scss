@@ -1,0 +1,10 @@
+@import "./legend.scss",
+  "./set.scss";
+
+.color-set {
+  @include set;
+}
+
+.color-set__title {
+  @include legend;
+}

@@ -1,0 +1,10 @@
+@import "./title.scss";
+
+.promo {
+  background-color: $color-secondary--lightest;
+}
+
+.promo__title {
+  @include title;
+  font-size: 27px;
+}

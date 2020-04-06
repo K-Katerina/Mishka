@@ -6,6 +6,7 @@
     <title>
       HTML Academy: Mishka
     </title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -15,7 +16,9 @@
       </a>
       <nav class="page-header__nav main-nav">
         <button class="main-nav__toggle" type="button">
-          Открыть меню
+          <span class="visually-hidden">
+            Открыть меню
+          </span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -181,19 +184,19 @@
         </a>
       </section>
       <section class="contacts">
-        <h2 class="visually-hidden">
-          Как нас найти:
+        <h2 class="contacts__title">
+          Контакты
         </h2>
         <dl class="contacts__list">
-          <dt class="contacts__title">
+          <dt class="contacts__caption">
             e-mail:
           </dt>
           <dd class="contacts__desc">
-            <a href="mailto:info@mimimishkashop.ru" class="contacts__email">
+            <a href="mailto:info@mimimishkashop.ru" class="contacts__email email">
               info@mimimishkashop.ru
             </a>
           </dd>
-          <dt class="contacts__title">
+          <dt class="contacts__caption">
             адрес:
           </dt>
           <dd class="contacts__desc">
@@ -244,7 +247,7 @@
         <b class="copyright__text">
           Разработано
         </b>
-        <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">
             HTML Academy
           </span>

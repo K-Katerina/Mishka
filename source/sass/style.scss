@@ -1,0 +1,73 @@
+@charset "utf-8";
+@import "./button.scss",
+  "./buy.scss",
+  "./checkbox.scss",
+  "./checkbox.scss",
+  "./color-set.scss",
+  "./consts.scss",
+  "./contacts.scss",
+  "./copyright.scss",
+  "./email.scss",
+  "./features-list.scss",
+  "./features.scss",
+  "./fio-set.scss",
+  "./form.scss",
+  "./input.scss",
+  "./legend.scss",
+  "./logo.scss",
+  "./main-nav.scss",
+  "./map.scss",
+  "./menu-promo.scss",
+  "./offers.scss",
+  "./page-footer.scss",
+  "./page-header.scss",
+  "./page-main.scss",
+  "./process.scss",
+  "./product.scss",
+  "./products.scss",
+  "./promo.scss",
+  "./radio.scss",
+  "./reviews.scss",
+  "./set.scss",
+  "./site-list.scss",
+  "./slider.scss",
+  "./social.scss",
+  "./table-desc.scss",
+  "./textarea.scss",
+  "./title.scss",
+  "./type-set.scss",
+  "./video-container.scss",
+  "./visually-hidden.scss";
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff") format("woff");
+}
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $color-secondary;
+  background-color: $color-secondary--lightest;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

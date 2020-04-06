@@ -1,0 +1,24 @@
+@import "./legend.scss",
+  "./consts.scss";
+
+.textarea {
+  display: block;
+}
+
+.textarea__title {
+  @include legend;
+}
+
+.itextarea__label {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $color-secondary;
+}
+
+.textarea__text {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $color-secondary--light;
+}

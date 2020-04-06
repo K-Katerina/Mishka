@@ -1,0 +1,18 @@
+@import "./title.scss";
+
+.page-main {
+  background-color: $color-secondary--lightest;
+}
+
+.page-main__title {
+  @include title;
+  font-size: 27px;
+  background-color: $color-secondary--lighten;
+}
+
+.page-main__desc {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $color-secondary--light;
+}

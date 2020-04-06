@@ -1,0 +1,14 @@
+.menu-promo {
+  list-style: none;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $color-secondary--lightest;
+  background-color: $color-main;
+  padding: 0;
+}
+
+.menu-promo__link {
+  text-decoration: none;
+  color: inherit;
+}

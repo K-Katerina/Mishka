@@ -1,0 +1,10 @@
+@import "./legend.scss",
+  "./set.scss";
+
+.type-set {
+  @include set;
+}
+
+.type-set__title {
+  @include legend;
+}

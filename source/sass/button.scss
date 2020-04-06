@@ -1,0 +1,14 @@
+@import "./consts.scss";
+
+.button {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $color-secondary--light;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px $color-secondary--light solid;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+}

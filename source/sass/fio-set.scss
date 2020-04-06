@@ -1,0 +1,10 @@
+@import "./legend.scss",
+  "./set.scss";
+
+.fio-set {
+  @include set;
+}
+
+.fio-set__title {
+  @include legend;
+}
