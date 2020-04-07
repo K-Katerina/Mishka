@@ -1,7 +1,9 @@
-@import "./title.scss";
-
 .offers {
   background-color: $color-secondary--lightest;
+
+  &::after {
+    @include zigzag;
+  }
 }
 
 .offers__title {

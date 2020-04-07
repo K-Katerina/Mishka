@@ -1,0 +1,48 @@
+@mixin border {
+  border: 1px $color-service solid;
+}
+
+@mixin legend {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  align-items: center;
+  display: flex;
+  text-transform: uppercase;
+  color: $color-main;
+
+  &::after {
+    content: "";
+    height: 1px;
+    flex-grow: 1;
+    margin-left: 20px;
+    background-color: $color-main;
+  }
+}
+
+@mixin set {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $color-secondary;
+  border: none;
+}
+
+@mixin title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $color-secondary;
+}
+
+@mixin zigzag {
+  content: "";
+  display: block;
+  padding: 0;
+  margin: 0;
+  background-repeat: repeat;
+  background-size: 320px 100%;
+  background-image: url("../img/bg-zigzag-line.svg");
+  height: 7px;
+  width: 100%;
+}

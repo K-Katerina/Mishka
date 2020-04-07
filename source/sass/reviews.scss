@@ -1,9 +1,11 @@
-@import "./title.scss";
-
 .reviews {
   background-color: $color-secondary--lightest;
   color: $color-secondary--light;
   font-weight: 700;
+
+  &::after {
+    @include zigzag;
+  }
 }
 
 .reviews__title {

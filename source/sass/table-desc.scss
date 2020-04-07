@@ -3,4 +3,11 @@
   line-height: 20px;
   font-weight: 400;
   color: $color-secondary--light;
+  border-collapse: collapse;
+}
+
+.table-desc__col {
+  border-bottom: 1px $color-service solid;
+  padding: 10px;
+  padding-left: 10px;
 }

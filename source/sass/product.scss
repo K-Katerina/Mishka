@@ -1,3 +1,8 @@
+.product {
+  @include border;
+
+  width: min-content;
+}
 
 .product__title {
   font-size: 17px;
@@ -11,6 +16,7 @@
   line-height: 30px;
   font-weight: 400;
   color: $color-secondary--light;
+  border-bottom: 1px $color-service solid;
 }
 
 .product__price {
