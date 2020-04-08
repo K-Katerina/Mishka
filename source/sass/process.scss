@@ -1,0 +1,19 @@
+.process {
+  @include border;
+  width: min-content;
+  background-color: $color-secondary--lightest;
+}
+
+.process__title {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $color-secondary;
+}
+
+.process__desc {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $color-secondary--light;
+}

@@ -1,0 +1,21 @@
+.input {
+  display: block;
+}
+
+.input__title {
+  @include legend;
+}
+
+.input__label {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $color-secondary;
+}
+
+.input__text {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $color-secondary--light;
+}

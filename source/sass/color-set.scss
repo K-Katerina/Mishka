@@ -1,0 +1,7 @@
+.color-set {
+  @include set;
+}
+
+.color-set__title {
+  @include legend;
+}

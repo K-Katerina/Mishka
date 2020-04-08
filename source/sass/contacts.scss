@@ -1,0 +1,15 @@
+.contacts {
+  background-color: $color-secondary--lightest;
+  color: $color-secondary--light;
+}
+
+.contacts__title {
+  @include title;
+  font-size: 18px;
+}
+
+.contacts__list {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+}

@@ -1,0 +1,7 @@
+.fio-set {
+  @include set;
+}
+
+.fio-set__title {
+  @include legend;
+}

@@ -1,0 +1,8 @@
+.page-footer {
+  background-color: $color-secondary--lighten;
+  color: $color-secondary;
+}
+
+.page-footer__copyright {
+  border-top: 1px darken($color: $color-service, $amount: 5%) solid;
+}
