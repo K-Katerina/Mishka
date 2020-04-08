@@ -1,0 +1,7 @@
+.colors {
+  @include group;
+}
+
+.colors__title {
+  @include legend;
+}
