@@ -1,0 +1,7 @@
+.fullname {
+  @include group;
+}
+
+.fullname__title {
+  @include legend;
+}
