@@ -1,7 +1,9 @@
 .page-header {
   background-color: $color-secondary--lightest;
+  display: flex;
+  flex-direction: column;
 }
 
-.page-header__nav {
-  border-top: 1px $color-service solid;
-}
+// .page-header__nav {
+//   border-top: 1px $color-service solid;
+// }

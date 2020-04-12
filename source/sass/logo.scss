@@ -1,3 +1,27 @@
 .logo {
   cursor: pointer;
+  max-width: 89px;
+
+  &:hover .logo__svg,
+  &:focus .logo__svg {
+    fill: $color-tiffany--darken;
+    opacity: 0.6;
+  }
+
+  &:active .logo__svg {
+    fill: $color-tiffany--darken;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    max-width: 113px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    max-width: 150px;
+  }
 }

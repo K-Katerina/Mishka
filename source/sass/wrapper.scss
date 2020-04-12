@@ -1,6 +1,23 @@
 .wrapper {
-  max-width: 1200px;
+  max-width: 1250px;
   min-width: 320px;
-  margin: 0 auto;
-  padding: 0 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper {
+    min-width: 640px;
+    padding: 0 48px;
+
+    &--nav {
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    min-width: 1160px;
+    padding: 0;
+    margin: 0 auto;
+  }
 }
