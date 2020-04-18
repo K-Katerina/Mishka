@@ -80,7 +80,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
@@ -101,7 +101,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     top: 2px;
     right: 50px;
     width: 175px;
@@ -109,7 +109,7 @@
 
   @media (min-width: $desktop-width) {
     top: 7px;
-    right: 0px;
+    right: 0;
   }
 }
 
@@ -122,13 +122,13 @@
     position: absolute;
     justify-content: flex-end;
     margin-bottom: 0;
-    bottom: 0px;
+    bottom: 0;
     right: 50px;
   }
 
   @media (min-width: $desktop-width) {
     bottom: 3px;
-    right: 0px;
+    right: 0;
   }
 }
 
@@ -145,7 +145,7 @@
     content: "";
     position: absolute;
     top: 0;
-    right: 0px;
+    right: 0;
     display: block;
     width: 100%;
     height: 100%;
@@ -156,7 +156,7 @@
     content: "";
     position: absolute;
     top: 0;
-    right: 0px;
+    right: 0;
     display: block;
     width: 100%;
     height: 100%;
