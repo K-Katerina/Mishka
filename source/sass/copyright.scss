@@ -1,6 +1,32 @@
+.copyright {
+  color: $color-secondary;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
 .copyright__text {
   font-size: 19px;
   line-height: 18px;
   font-weight: 700;
-  color: $color-secondary;
+  align-self: flex-start;
+  padding: 5px 15px;
+}
+
+.copyright__link {
+  padding: 0 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    width: 33%;
+  }
+}
+
+.copyright__logo path {
+  fill: $color-main;
 }

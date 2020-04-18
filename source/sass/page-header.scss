@@ -2,8 +2,12 @@
   background-color: $color-secondary--lightest;
   display: flex;
   flex-direction: column;
-}
+  position: relative;
 
-// .page-header__nav {
-//   border-top: 1px $color-service solid;
-// }
+  @media (min-width: $desktop-width) {
+    max-width: 1160px;
+    margin: 0 auto;
+    z-index: 1;
+    background-color: transparent;
+  }
+}

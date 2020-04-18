@@ -4,11 +4,51 @@
   line-height: 24px;
   font-weight: 700;
   color: $color-secondary--lightest;
-  background-color: $color-main;
   padding: 0;
+  display: flex;
+}
+
+.menu-promo__item {
+  display: flex;
+  flex-grow: 1;
+  height: 103px;
+
+  &:nth-child(2n) {
+    background-color: $color-main--dark;
+  }
+
+  &:nth-child(2n+1) {
+    background-color: $color-main;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 117px;
+  }
 }
 
 .menu-promo__link {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
   text-decoration: none;
   color: inherit;
+  width: 320px;
+  margin: 0 auto;
+  padding: 25px 27px 15px 28px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    flex-grow: 1;
+    padding: 25px 35px 15px 35px;
+  }
+}
+
+.menu-promo__icon path {
+  fill: $color-main--darkest;
+  opacity: 0.5;
 }

@@ -9,5 +9,10 @@
 .table-desc__col {
   border-bottom: 1px $color-service solid;
   padding: 10px;
-  padding-left: 10px;
+  padding-right: 28px;
+  padding-left: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+  }
 }

@@ -1,21 +1,88 @@
 .offers {
   background-color: $color-secondary--lightest;
+  position: relative;
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 61px;
+  }
 
   &::after {
     @include zigzag;
+
+    @media (min-width: $tablet-width) {
+      background-size: auto 15px;
+      height: 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-size: auto;
+      height: 23px;
+    }
+  }
+}
+
+.offers__article {
+  position: relative;
+  padding: 0 30px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 51px;
+    padding: 0;
+    width: 678px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 11px;
+    width: 1050px;
+    margin-bottom: 48px;
   }
 }
 
 .offers__title {
   @include title;
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 173px;
+    width: 100%;
+  }
 }
 
 .offers__week {
+  display: block;
+  margin-bottom: 23px;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
   color: $color-main;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    line-height: 18px;
+    margin-bottom: 0;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    right: 27px;
+    top: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 42px;
+    top: 24px;
+  }
 }
 
 .offers__desc {
@@ -23,6 +90,20 @@
   line-height: 24px;
   font-weight: 400;
   color: $color-secondary--light;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 44%;
+    font-size: 17px;
+    line-height: 29px;
+    margin-bottom: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 30px;
+    width: 41%;
+    margin-bottom: 47px;
+  }
 }
 
 .offers__price {
@@ -30,4 +111,69 @@
   line-height: 24px;
   font-weight: 700;
   color: $color-secondary;
+  flex: 1 0 100%;
+  text-align: center;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: 286px;
+    font-size: 20px;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 10px;
+  }
+}
+
+.offers__button {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    width: 43.5%;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 42%;
+    margin-bottom: 73px;
+  }
+}
+
+.offers__wrapper-img {
+  flex: 1 0 100%;
+  text-align: center;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    float: right;
+    width: 50%;
+    margin-bottom: 0px;
+    margin-top: -121px;
+  }
+}
+
+.offers__img {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.offers__table {
+  margin: 0 auto;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    float: left;
+    width: 43%;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 42%;
+    margin-bottom: 108px;
+  }
 }

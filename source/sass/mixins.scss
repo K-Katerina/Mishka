@@ -33,12 +33,25 @@
   line-height: 30px;
   font-weight: 700;
   color: $color-secondary;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    width: 540px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 55px;
+    width: 650px;
+    line-height: 56px;
+    letter-spacing: -2px;
+  }
 }
 
 @mixin zigzag {
   content: "";
   display: block;
-  padding: 0;
   margin: 0;
   background-repeat: repeat;
   background-size: 320px 100%;

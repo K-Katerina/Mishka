@@ -1,3 +1,51 @@
-.socials {
+.social {
   background-color: $color-secondary--lighten;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 25px 40px;
+}
+
+.social__item {
+  height: 30px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.social__link {
+  position: relative;
+
+  &--twitter::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 60px;
+    height: 27px;
+    background: url("../img/icon-twitter.svg") no-repeat 50% 50%;
+  }
+
+  &--facebook::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 60px;
+    height: 27px;
+    background: url("../img/icon-fb.svg") no-repeat 50% 50%;
+  }
+
+  &--instagram::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 60px;
+    height: 27px;
+    background: url("../img/icon-insta.svg") no-repeat 50% 50%;
+  }
 }

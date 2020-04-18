@@ -1,23 +1,32 @@
 .wrapper {
-  max-width: 1250px;
+  position: relative;
   min-width: 320px;
-}
+  padding: 0 30px;
+  margin: 0 auto;
 
-@media (min-width: $tablet-width) {
-  .wrapper {
-    min-width: 640px;
-    padding: 0 48px;
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 0 49px;
+  }
 
-    &--nav {
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    padding: 0 173px;
+  }
+
+  &--footer {
+    min-width: 320px;
+    padding: 0 30px;
+    margin: 0 auto;
+  
+    @media (min-width: $tablet-width) {
+      width: 768px;
+      padding: 0 49px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      width: 1050px;
       padding: 0;
     }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .wrapper {
-    min-width: 1160px;
-    padding: 0;
-    margin: 0 auto;
   }
 }

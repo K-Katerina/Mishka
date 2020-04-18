@@ -3,4 +3,137 @@
   line-height: 20px;
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+}
+
+.features-list__item {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  padding-top: 55px;
+  padding-bottom: 28px;
+  padding-right: 10px;
+  max-width: 265px;
+
+  &--eco {
+
+    @media (min-width: $tablet-width) {
+      order: 1;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 8px;
+      display: block;
+      width: 32px;
+      height: 37.3px;
+      background: url("../img/icon-feature-flower.svg") no-repeat 50% 50%;
+    }
+  }
+
+  &--price {
+
+    @media (min-width: $tablet-width) {
+      order: 3;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 0;
+      display: block;
+      width: 46.5px;
+      height: 27.3px;
+      background: url("../img/icon-feature-money.svg") no-repeat 50% 50%;
+    }
+  }
+
+  &--like {
+
+    @media (min-width: $tablet-width) {
+      order: 5;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 7px;
+      display: block;
+      width: 33px;
+      height: 27.9px;
+      background: url("../img/icon-feature-heart.svg") no-repeat 50% 50%;
+    }
+  }
+
+  &--hand {
+
+    @media (min-width: $tablet-width) {
+      order: 2;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 3px;
+      display: block;
+      width: 34.3px;
+      height: 34.3px;
+      background: url("../img/icon-feature-ball.svg") no-repeat 50% 50%;
+    }
+}
+
+  &--producer {
+
+    @media (min-width: $tablet-width) {
+      order: 4;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: -5px;
+      display: block;
+      width: 54.1px;
+      height: 23.2px;
+      background: url("../img/icon-feature-rocket.svg") no-repeat 50% 50%;
+    }
+  }
+
+  &--gift {
+
+    @media (min-width: $tablet-width) {
+      order: 6;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 3px;
+      display: block;
+      width: 32.7px;
+      height: 32.5px;
+      background: url("../img/icon-feature-gift.svg") no-repeat 50% 50%;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 50%;
+    font-size: 20px;
+    line-height: 22px;
+    padding-bottom: 56px;
+  }
 }

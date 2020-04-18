@@ -1,27 +1,32 @@
 .logo {
   cursor: pointer;
-  max-width: 89px;
+  max-width: 86px;
+  height: 35px; 
 
-  &:hover .logo__svg,
-  &:focus .logo__svg {
-    fill: $color-tiffany--darken;
+  &:hover .logo__img,
+  &:focus .logo__img {
+    color: $color-tiffany--darken;
     opacity: 0.6;
   }
 
-  &:active .logo__svg {
-    fill: $color-tiffany--darken;
+  &:active .logo__img {
+    color: $color-tiffany--darken;
     opacity: 0.3;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .logo {
+  @media (min-width: $tablet-width) {
     max-width: 113px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 150px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .logo {
-    max-width: 150px;
+.logo__img {
+  padding-top: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
   }
 }

@@ -1,9 +1,8 @@
 .email {
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 400;
+  font: inherit;
   color: $color-secondary--light;
   text-decoration: none;
+  padding-bottom: 4px;
   border-bottom: 1px $color-main--bright solid;
   cursor: pointer;
 }
