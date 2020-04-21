@@ -25,6 +25,7 @@
 
 .logo__img {
   padding-top: 4px;
+  max-width: 150px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;

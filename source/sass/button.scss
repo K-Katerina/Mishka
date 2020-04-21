@@ -10,4 +10,14 @@
   display: inline-block;
   vertical-align: middle;
   padding: 16px;
+
+  &:hover,
+  &:focus {
+    background-color: $color-secondary--light;
+    color: $color-secondary--lightest;
+  }
+
+  &:active {
+    color: lighten($color: $color-secondary--light, $amount: 28%);
+  }
 }

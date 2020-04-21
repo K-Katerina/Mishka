@@ -2,10 +2,15 @@
   background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  height: 455px;
 }
 
 .map__iframe {
   width: 100%;
   border: none;
-  height: 463px;
+  height: 460px;
+
+  @media (min-width: $tablet-width) {
+    height: 455px;
+  }
 }

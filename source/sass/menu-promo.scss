@@ -29,24 +29,23 @@
 .menu-promo__link {
   display: flex;
   justify-content: space-between;
-  position: relative;
   text-decoration: none;
   color: inherit;
-  width: 320px;
-  margin: 0 auto;
+  width: 100%;
   padding: 25px 27px 15px 28px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-  }
+    padding: 29px 35px 15px 35px;
 
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    flex-grow: 1;
-    padding: 25px 35px 15px 35px;
+
+    &--interior .menu-promo__icon {
+      width: 43px;
+    }
   }
 }
+
 
 .menu-promo__icon path {
   fill: $color-main--darkest;

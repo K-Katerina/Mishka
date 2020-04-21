@@ -10,8 +10,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0 0;
     width: 1050px;
-    padding: 0 173px;
+    padding-left: 175px;
   }
 
   &--footer {

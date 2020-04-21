@@ -1,0 +1,16 @@
+.delivery {
+  font-size: 15px;
+  font-weight: 400;
+  max-width: 300px;
+  color: $color-secondary--light;
+  margin-left: auto;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.delivery__link {
+  color: inherit;
+  text-decoration: none;
+}
