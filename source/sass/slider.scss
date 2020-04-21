@@ -116,6 +116,7 @@
   &:hover,
   &:focus {
     opacity: 0.6;
+
     &::before {
       opacity: 1;
     }

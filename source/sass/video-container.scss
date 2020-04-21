@@ -15,7 +15,7 @@
   background: url("../img/icon-play.svg") no-repeat 50% 50%;
   background-size: 101px 77px;
   cursor: pointer;
-  transition: transform .2s ease, opacity .2s ease;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 
   &:hover,
   &:focus {
@@ -30,6 +30,6 @@
     left: 307px;
     width: 80px;
     height: 61px;
-    opacity: .6;
+    opacity: 0.6;
   }
 }
