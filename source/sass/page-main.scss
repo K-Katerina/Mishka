@@ -6,6 +6,20 @@
   @include title;
   font-size: 27px;
   background-color: $color-secondary--lighten;
+  width: 250px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 115px;
+    font-size: 53px;
+    line-height: 55px;
+    letter-spacing: 0;
+  }
 }
 
 .page-main__desc {

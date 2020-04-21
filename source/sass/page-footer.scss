@@ -3,7 +3,7 @@
   color: $color-secondary;
 
   @media (min-width: $tablet-width) {
-    padding: 28px 0;
+    padding: 32px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,10 +35,6 @@
     border: none;
     padding-top: 29px;
   }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 36px;
-  }
 }
 
 .page-footer__social {
@@ -63,7 +59,11 @@
     display: none;
   }
 
+  @media (min-width: $tablet-width) {
+    margin-right: 15.3%;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-right: 9%;
+    margin-right: 10%;
   }
 }

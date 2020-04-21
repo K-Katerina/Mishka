@@ -2,6 +2,15 @@
   @include border;
   width: min-content;
   background-color: $color-secondary--lightest;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);;
+  }
+
+  &:active {
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);;
+  }
 }
 
 .process__title {

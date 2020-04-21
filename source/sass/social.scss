@@ -61,4 +61,13 @@
     height: 27px;
     background: url("../img/icon-insta.svg") no-repeat 50% 50%;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8; //пока так
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

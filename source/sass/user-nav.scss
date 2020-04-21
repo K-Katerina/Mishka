@@ -75,4 +75,16 @@
     opacity: 0.2;
     background-size: contain;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

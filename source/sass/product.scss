@@ -2,6 +2,15 @@
   @include border;
 
   width: min-content;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product__title {
@@ -9,6 +18,15 @@
   line-height: 24px;
   font-weight: 700;
   color: $color-secondary;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product__desc {
@@ -26,4 +44,8 @@
   color: $color-secondary;
   display: inline-block;
   vertical-align: middle;
+}
+
+.product__more {
+  text-decoration: none;
 }

@@ -3,17 +3,6 @@
   max-width: 86px;
   height: 35px;
 
-  &:hover .logo__img,
-  &:focus .logo__img {
-    color: $color-tiffany--darken;
-    opacity: 0.6;
-  }
-
-  &:active .logo__img {
-    color: $color-tiffany--darken;
-    opacity: 0.3;
-  }
-
   @media (min-width: $tablet-width) {
     max-width: 113px;
   }
@@ -29,5 +18,20 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &--footer:hover path,
+  &--footer:focus path {
+    fill: $color-tiffany--darken;
+  }
+
+  &:active,
+  &--footer:active path {
+    opacity: 0.3;
   }
 }

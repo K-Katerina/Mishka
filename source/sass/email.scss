@@ -5,4 +5,13 @@
   padding-bottom: 4px;
   border-bottom: 1px $color-main--bright solid;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $color-main--bright;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
