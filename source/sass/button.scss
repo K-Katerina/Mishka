@@ -3,12 +3,14 @@
   line-height: 16px;
   font-weight: 700;
   color: $color-secondary--light;
+  background-color: $color-secondary--lightest;
   text-decoration: none;
   text-transform: uppercase;
   border: 2px $color-secondary--light solid;
   cursor: pointer;
   display: inline-block;
   vertical-align: middle;
+  text-align: center;
   padding: 16px;
 
   &:hover,
@@ -19,5 +21,32 @@
 
   &:active {
     color: lighten($color: $color-secondary--light, $amount: 28%);
+  }
+}
+
+.button--popup {
+  display: block;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $color-secondary--lightest;
+  border: 2px $color-main solid;
+  background-color: $color-main;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  padding: 16px;
+  width: 100%;
+
+  &:hover,
+  &:focus {
+    background-color: $color-secondary--lightest;
+    color: $color-main;
+  }
+
+  &:active {
+    background-color: darken($color: $color-secondary--lightest, $amount: 10%);
+    color: $color-main;
   }
 }

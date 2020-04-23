@@ -1,15 +1,25 @@
 .product {
-  @include border;
+  display: flex;
+  flex-direction: column;
+  border: 1px $color-service solid;
+  margin-bottom: 28px;
 
-  width: min-content;
-
-  &:hover,
-  &:focus {
-    opacity: 0.6;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    margin-bottom: 52px;
+    max-width: 670px;
   }
 
-  &:active {
-    opacity: 0.3;
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    margin: 0;
+    margin-right: 48px;
+    max-width: 318px;
+    margin-bottom: 30px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -18,6 +28,7 @@
   line-height: 24px;
   font-weight: 700;
   color: $color-secondary;
+  padding-bottom: 5px;
 
   &:hover,
   &:focus {
@@ -27,6 +38,11 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding-bottom: 7px;
+  }
 }
 
 .product__desc {
@@ -34,7 +50,17 @@
   line-height: 30px;
   font-weight: 400;
   color: $color-secondary--light;
-  border-bottom: 1px $color-service solid;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    line-height: 30px;
+    flex-grow: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 12px;
+  }
 }
 
 .product__price {
@@ -44,8 +70,56 @@
   color: $color-secondary;
   display: inline-block;
   vertical-align: middle;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 26px;
+  }
+}
+
+.product__padding {
+  padding: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+}
+
+.product__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px $color-service solid;
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 6px;
+    padding-top: 23px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-top: 21px;
+  }
 }
 
 .product__more {
   text-decoration: none;
+  font-size: 0;
+  line-height: 0;
+  min-width: 50%;
+}
+
+.product__img {
+  width: 100%;
+}
+
+.product__button {
+  @media (min-width: $desktop-width) {
+    padding: 0 9px;
+  }
 }

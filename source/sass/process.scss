@@ -1,7 +1,29 @@
 .process {
-  @include border;
-  width: min-content;
+  @include wrapper;
+
   background-color: $color-secondary--lightest;
+  margin-bottom: 59px;
+  max-width: 500px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    max-width: 1000px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 50px;
+    padding-top: 27px;
+    max-width: 1150px;
+    margin-bottom: 104px;
+  }
+}
+
+.process__wrapper {
+  border: 1px $color-service solid;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 
   &:hover,
   &:focus {
@@ -11,6 +33,12 @@
   &:active {
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 630px;
+  }
 }
 
 .process__title {
@@ -18,6 +46,49 @@
   line-height: 24px;
   font-weight: 700;
   color: $color-secondary;
+  padding-left: 90px;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding-left: 107px;
+    padding-bottom: 15px;
+    padding-top: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 78px;
+    padding-right: 78px;
+    padding-top: 96px;
+    padding-bottom: 33px;
+    max-width: 365px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 33px;
+    bottom: 52%;
+    transform: translateY(50%);
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 32px;
+    width: 32px;
+    background-size: contain;
+
+    @media (min-width: $tablet-width) {
+      left: 42px;
+      bottom: 27px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 79px;
+      top: 25px;
+    }
+  }
 }
 
 .process__desc {
@@ -25,4 +96,43 @@
   line-height: 24px;
   font-weight: 400;
   color: $color-secondary--light;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    line-height: 30px;
+    padding-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 45px;
+  }
+}
+
+.process__info {
+  padding: 27px 33px;
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 42px;
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-bottom: 10px;
+    padding-left: 81px;
+    padding-right: 57px;
+    max-width: 368px;
+  }
+}
+
+.process__container {
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+}
+
+.process__button {
+  width: 100%;
 }

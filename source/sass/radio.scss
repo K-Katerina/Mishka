@@ -3,3 +3,54 @@
   line-height: 18px;
   font-weight: 700;
 }
+
+.radio--size {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 82px;
+  height: 52px;
+  text-align: center;
+  padding-top: 15px;
+  margin-right: 4px;
+  text-transform: uppercase;
+  color: $color-secondary;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+    margin-right: 5px;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border: 2px $color-secondary--light solid;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.radio__input:checked + .radio--size::before {
+  border: 2px $color-main solid;
+}
+
+.radio--size::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 0;
+  width: 82px;
+  height: 52px;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+  border: 2px solid $color-service;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+  }
+}

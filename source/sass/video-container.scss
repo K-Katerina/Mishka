@@ -1,35 +1,39 @@
 .video-container {
-  background-color: $color-secondary--lightest;
+  background-color: $color-secondary--lighten;
   position: relative;
+  font-size: 0;
+  line-height: 0;
+
+  @media (min-width: $desktop-width) {
+    max-width: 680px;
+  }
 }
 
 .video-container__play {
   position: absolute;
   z-index: 1;
-  top: 40px;
-  left: 80px;
-  width: 101px;
+
   height: 77px;
-  font-size: 0;
-  line-height: 0;
+  width: 101px;
   background: url("../img/icon-play.svg") no-repeat 50% 50%;
   background-size: 101px 77px;
   cursor: pointer;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%) scale(1);
 
   &:hover,
   &:focus {
-    top: 190px;
-    left: 290px;
-    width: 121px;
-    height: 92px;
+    transform: translate(-50%, 50%) scale(1.2);
   }
 
   &:active {
-    top: 210px;
-    left: 307px;
-    width: 80px;
-    height: 61px;
+    transform: translate(-50%, 50%) scale(0.8);
     opacity: 0.6;
   }
+}
+
+.video-container__img {
+  width: 100%;
 }

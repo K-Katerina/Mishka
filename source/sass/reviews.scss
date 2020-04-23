@@ -17,7 +17,8 @@
   @media (min-width: $desktop-width) {
     padding-top: 72px;
     padding-bottom: 186px;
-    width: 1050px;
+    background-position-x: 100px;
+    width: 1250px;
     margin: 0 auto;
   }
 
@@ -27,12 +28,18 @@
 }
 
 .reviews__wrapper {
+  @include wrapper;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 275px;
   }
 }
 
@@ -68,6 +75,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 8px;
+    align-self: center;
+    margin-bottom: 37px;
   }
 }

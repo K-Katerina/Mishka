@@ -21,6 +21,8 @@
 }
 
 .offers__wrapper {
+  @include wrapper;
+
   display: flex;
   flex-direction: column;
 
@@ -35,28 +37,26 @@
   @media (min-width: $desktop-width) {
     max-height: 484px;
     justify-content: flex-end;
+    padding-left: 275px;
   }
 }
 
 .offers__article {
+  @include wrapper;
+
   position: relative;
-  padding: 0 30px;
-  margin: 0 auto;
   margin-bottom: 5px;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 51px;
-    padding: 0;
-    width: 675px;
     flex-direction: row;
     align-items: flex-end;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 11px;
-    width: 958px;
     margin-bottom: 48px;
     flex-direction: row-reverse;
     z-index: 1;
@@ -68,11 +68,13 @@
   margin-bottom: 5px;
 
   @media (min-width: $tablet-width) {
+    font-size: 43px;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 54px;
+    font-size: 56px;
     width: 100%;
   }
 }
@@ -91,11 +93,11 @@
     margin-bottom: 0;
     text-align: center;
     padding-bottom: 3px;
-    margin-left: 30px;
+    margin-left: 26px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    margin-left: 46px;
     padding-bottom: 6px;
   }
 }

@@ -1,10 +1,19 @@
 .contacts {
+  @include wrapper;
+
   background-color: $color-secondary--lightest;
   color: $color-secondary--light;
   padding-bottom: 39px;
   display: flex;
   flex-direction: column;
   position: relative;
+
+  @media (max-width: $tablet-width-only) {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    width: 100%;
+  }
 
   @media (min-width: $tablet-width) {
     padding-bottom: 58px;
@@ -25,11 +34,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1050px;
     max-height: 632px;
-    margin: 0 auto;
     padding-top: 142px;
     padding-bottom: 57px;
+    padding-left: 275px;
     flex-direction: column;
     align-content: space-between;
     justify-content: flex-end;
@@ -39,7 +47,7 @@
     &::before {
       content: "";
       position: absolute;
-      left: 63px;
+      left: 163px;
       top: 131px;
       background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;
@@ -62,8 +70,14 @@
 }
 
 .contacts__wrapper {
+  width: 100%;
+
+  @media (max-width: $tablet-width-only) {
+    @include wrapper;
+  }
+
   @media (min-width: $desktop-width) {
-    max-width: 47%;
+    max-width: 35%;
   }
 }
 
@@ -98,10 +112,12 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 30px;
-  margin-right: 27px;
+  margin-right: 3px;
+  min-width: 271px;
 
   @media (min-width: $tablet-width) {
     margin-right: 38px;
+    min-width: auto;
   }
 }
 
@@ -145,7 +161,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 50%;
+    min-width: 60%;
     float: right;
     margin-bottom: 50px;
     order: 5;

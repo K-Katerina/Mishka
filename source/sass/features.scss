@@ -1,4 +1,6 @@
 .features {
+  @include wrapper;
+
   background-color: $color-secondary--lightest;
   color: $color-secondary;
   font-weight: 700;
@@ -10,6 +12,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 33px;
+    padding-left: 275px;
   }
 }
 
@@ -23,12 +26,8 @@
 }
 
 .features__list {
-  padding: 0 30px;
-
   @media (min-width: $tablet-width) {
-    padding: 0;
     width: 670px;
-    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {

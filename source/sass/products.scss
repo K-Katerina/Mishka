@@ -1,3 +1,22 @@
 .products {
+  @include wrapper;
+
   background-color: $color-secondary--lightest;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  max-width: 500px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 80px;
+    max-width: 1000px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 50px;
+    padding-top: 130px;
+    min-width: 1150px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
