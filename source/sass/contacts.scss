@@ -37,7 +37,7 @@
     max-height: 632px;
     padding-top: 142px;
     padding-bottom: 57px;
-    padding-left: 275px;
+    padding-left: 225px;
     flex-direction: column;
     align-content: space-between;
     justify-content: flex-end;
@@ -47,7 +47,7 @@
     &::before {
       content: "";
       position: absolute;
-      left: 163px;
+      left: 113px;
       top: 131px;
       background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;

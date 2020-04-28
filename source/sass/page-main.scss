@@ -46,8 +46,24 @@
 }
 
 .page-main__desc {
+  @include wrapper;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
+  padding-top: 22px;
+  padding-bottom: 24px;
   color: $color-secondary--light;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    padding-top: 73px;
+    padding-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 225px;
+    padding-right: 225px;
+    padding-top: 123px;
+  }
 }

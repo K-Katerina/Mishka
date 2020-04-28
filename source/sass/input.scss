@@ -4,6 +4,19 @@
 
 .input__title {
   @include legend;
+  margin-bottom: 7px;
+  min-width: 70px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 97px;
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 45px;
+    margin-left: 60px;
+    padding-top: 22px;
+  }
 }
 
 .input__label {
@@ -11,6 +24,12 @@
   line-height: 18px;
   font-weight: 700;
   color: $color-secondary;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    margin-right: 25px;
+    align-self: center;
+  }
 }
 
 .input__text {
@@ -18,4 +37,44 @@
   line-height: 18px;
   font-weight: 400;
   color: $color-secondary--light;
+  background-color: transparent;
+  position: relative;
+
+  width: 100%;
+  padding: 16px 35px 16px 0;
+  border: 0;
+  border-bottom: 2px $color-secondary--light solid;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 16px;
+    padding-top: 15px;
+    font-size: 19px;
+  }
+
+  &--tel::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    width: 24px;
+    height: 24px;
+    background: url("../img/icon-phone.svg") no-repeat 50% 50%;
+    background-size: 24px 24px;
+  }
+
+  &--email::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    width: 24px;
+    height: 24px;
+    background: url("../img/icon-mail.svg") no-repeat 50% 50%;
+    background-size: 24px 24px;
+  }
+}
+
+.input__text:hover,
+.input__text:focus {
+  border-bottom: 2px $color-main solid;
 }

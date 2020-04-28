@@ -56,13 +56,12 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding: 29px 35px 15px 35px;
-
-
-    &--interior .menu-promo__icon {
-      width: 43px;
-    }
+    padding: 29px 31px 15px 35px;
   }
+}
+
+.menu-promo__text {
+  max-width: 150px;
 }
 
 

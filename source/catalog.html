@@ -259,18 +259,24 @@
     </footer>
 
     <section class="modal-popup">
-      <h2>Добавить в корзину</h2>
-      <p>Выберите размер:</p>
-      <form class="modal-popup__form" action="#" method="post">
-        <input type="radio" class="modal-popup__radio" id="s" name="size" value="s" checked="">
-        <label for="s" class="modal-popup__label">S</label>
-        <input type="radio" class="modal-popup__radio" id="m" name="size" value="m">
-        <label for="m" class="modal-popup__label">M</label>
-        <input type="radio" class="modal-popup__radio" id="l" name="size" value="l">
-        <label for="l" class="modal-popup__label">L</label>
-        <div class="modal-popup__btn-wrapper">
-          <button type="submit" class="modal-popup__btn">Добавить</button>
+      <h2 class="modal-popup__title">Добавить в&nbsp;корзину</h2>
+      <p class="modal-popup__info">Выберите размер:</p>
+      <form class="modal-popup__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-popup__wrapper">
+          <input type="radio" class="radio__input visually-hidden" id="s" name="size" value="s" checked="">
+          <label for="s" class="radio__label radio--size">
+            S
+          </label>
+          <input type="radio" class="radio__input visually-hidden" id="m" name="size" value="m">
+          <label for="m" class="radio__label radio--size">
+            M
+          </label>
+          <input type="radio" class="radio__input visually-hidden" id="l" name="size" value="l">
+          <label for="l" class="radio__label radio--size">
+            L
+          </label>
         </div>
+        <button type="submit" class="modal-popup__btn button--popup">Добавить</button>
       </form>
     </section>
 

@@ -1,7 +1,61 @@
 .colors {
   @include group;
+
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-bottom: 47px;
+    padding-top: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 29px;
+  }
 }
 
 .colors__title {
   @include legend;
+
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 108px;
+    padding-top: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 54px;
+    margin-left: 60px;
+    padding-top: 37px;
+  }
+}
+
+.colors__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    max-width: 800px;
+  }
+}
+
+.colors__item {
+  margin-top: 11px;
+  padding-bottom: 11px;
+  width: 258px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 13px;
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 262px;
+  }
 }

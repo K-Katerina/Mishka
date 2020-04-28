@@ -1,14 +1,109 @@
 .form {
   background-color: $color-secondary--lightest;
+  padding-bottom: 55px;
+
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 50px;
+
+    .form__wrapper:nth-child(2n) {
+      background-color: $color-secondary--lighten;
+    }
+  }
+}
+
+.form__set {
+  @include wrapper;
+}
+
+.form__input {
+  @include wrapper;
+
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 21px;
+
+    &:first-child {
+      padding-top: 47px;
+    }
+
+    &:last-child {
+      padding-bottom: 50px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 225px;
+  }
+}
+
+.form__textarea {
+  @include wrapper;
+
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 225px;
+    padding-bottom: 50px;
+  }
+}
+
+.form__bottom {
+  @include wrapper;
+
+  display: flex;
+  flex-direction: column;
+  padding-top: 6px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 225px;
+    padding-right: 225px;
+  }
 }
 
 .form__note {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
+  padding-bottom: 31px;
+  display: inline-block;
   color: $color-secondary--light;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    padding-bottom: 0;
+    padding-top: 4px;
+  }
 }
 
 .form__submit {
-  display: block;
+  min-width: 260px;
+  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    max-width: 320px;
+    min-width: 231px;
+    order: -1;
+  }
 }
