@@ -1,9 +1,36 @@
 .features {
+  @include wrapper;
+
   background-color: $color-secondary--lightest;
   color: $color-secondary;
   font-weight: 700;
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 33px;
+    padding-left: 225px;
+  }
 }
 
 .features__title {
   @include title;
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+  }
+}
+
+.features__list {
+  @media (min-width: $tablet-width) {
+    width: 670px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
 }

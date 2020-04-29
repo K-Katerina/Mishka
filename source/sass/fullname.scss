@@ -1,7 +1,51 @@
 .fullname {
   @include group;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-bottom: 47px;
+    padding-top: 29px;
+  }
 }
 
 .fullname__title {
   @include legend;
+
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 108px;
+    padding-top: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 54px;
+    margin-left: 60px;
+    padding-top: 38px;
+  }
+}
+
+.fullname__item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding-top: 18px;
+    padding-left: 19px;
+    padding-bottom: 3px;
+  }
+}
+
+.fullname__container {
+  flex-grow: 1;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 175px;
+  }
 }

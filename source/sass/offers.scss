@@ -1,21 +1,105 @@
 .offers {
   background-color: $color-secondary--lightest;
+  position: relative;
+  padding-bottom: 42px;
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 62px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 90px;
+    padding-top: 43px;
+    margin-bottom: 61px;
+  }
 
   &::after {
     @include zigzag;
   }
 }
 
+.offers__wrapper {
+  @include wrapper;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-height: 450px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-height: 484px;
+    justify-content: flex-end;
+    padding-left: 225px;
+  }
+}
+
+.offers__article {
+  @include wrapper;
+
+  position: relative;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 51px;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 11px;
+    margin-bottom: 48px;
+    flex-direction: row-reverse;
+    z-index: 1;
+  }
+}
+
 .offers__title {
   @include title;
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 54px;
+    font-size: 56px;
+    width: 100%;
+  }
 }
 
 .offers__week {
+  margin-bottom: 18px;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
   color: $color-main;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    line-height: 18px;
+    margin-bottom: 0;
+    text-align: center;
+    padding-bottom: 3px;
+    margin-left: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 46px;
+    padding-bottom: 6px;
+  }
 }
 
 .offers__desc {
@@ -23,6 +107,20 @@
   line-height: 24px;
   font-weight: 400;
   color: $color-secondary--light;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 44%;
+    font-size: 17px;
+    line-height: 29px;
+    margin-bottom: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 30px;
+    width: 34%;
+    margin-bottom: 47px;
+  }
 }
 
 .offers__price {
@@ -30,4 +128,67 @@
   line-height: 24px;
   font-weight: 700;
   color: $color-secondary;
+  flex: 1 0 100%;
+  text-align: center;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: 286px;
+    font-size: 20px;
+    margin-bottom: 34px;
+  }
+}
+
+.offers__button {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    width: 43.5%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 33.2%;
+  }
+}
+
+.offers__wrapper-img {
+  flex: 1 0 100%;
+  text-align: center;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 50.1%;
+    padding-top: 3px;
+    margin-bottom: 0;
+    order: 5;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 524px;
+  }
+}
+
+.offers__img {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.offers__table {
+  margin: 0 auto;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    float: left;
+    width: 43%;
+    margin: 0;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 33%;
+    margin-bottom: 108px;
+  }
 }

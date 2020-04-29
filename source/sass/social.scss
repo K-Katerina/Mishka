@@ -1,3 +1,73 @@
-.socials {
+.social {
   background-color: $color-secondary--lighten;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 18px 40px;
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 40px;
+  }
+}
+
+.social__item {
+  height: 45px;
+  width: 40px;
+  margin: 0 9px;
+  padding-top: 12px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 12px;
+    margin: 0 5px;
+  }
+}
+
+.social__link {
+  position: relative;
+  width: 25px;
+
+  &--twitter::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 7px;
+    width: 25px;
+    height: 27px;
+    background: url("../img/icon-twitter.svg") no-repeat 50% 50%;
+  }
+
+  &--facebook::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 7px;
+    width: 25px;
+    height: 27px;
+    background: url("../img/icon-fb.svg") no-repeat 50% 50%;
+  }
+
+  &--instagram::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 4px;
+    width: 25px;
+    height: 27px;
+    background: url("../img/icon-insta.svg") no-repeat 50% 50%;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8; //пока так
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

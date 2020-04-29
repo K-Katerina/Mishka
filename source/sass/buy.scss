@@ -1,5 +1,15 @@
 .buy {
   cursor: pointer;
+
+
+  &:hover .buy__path,
+  &:focus .buy__path {
+    opacity: 1;
+  }
+
+  &:active .buy__path {
+    opacity: 0.3;
+  }
 }
 
 .buy__path {

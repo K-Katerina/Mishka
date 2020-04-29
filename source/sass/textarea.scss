@@ -4,9 +4,22 @@
 
 .textarea__title {
   @include legend;
+
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 17px;
+    margin-right: 128px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 76px;
+    margin-left: 60px;
+    padding-top: 18px;
+  }
 }
 
-.itextarea__label {
+.textarea__label {
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -14,8 +27,23 @@
 }
 
 .textarea__text {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 18px;
   font-weight: 400;
   color: $color-secondary--light;
+  width: 100%;
+  padding: 14px;
+  height: 142px;
+  resize: none;
+  background-color: transparent;
+  border: 2px $color-secondary--light solid;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+  }
+
+  &:focus,
+  &:hover {
+    border: 2px $color-main solid;
+  }
 }

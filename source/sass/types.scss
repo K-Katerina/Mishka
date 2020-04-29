@@ -1,7 +1,48 @@
 .types {
   @include group;
+
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-bottom: 40px;
+  }
 }
 
 .types__title {
   @include legend;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 121px;
+    padding-top: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 64px;
+    margin-right: 63px;
+  }
+}
+
+.types__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  @media (min-width: $desktop-width) {
+    max-width: 800px;
+  }
+}
+
+.types__item {
+  padding: 7px 0 7px 0;
+  min-width: 270px;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    padding: 16px;
+  }
 }

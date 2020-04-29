@@ -2,15 +2,68 @@
   background-color: $color-secondary--lightest;
 }
 
+.page-main__title-wrapper {
+  background-color: $color-secondary--lighten;
+  width: 100%;
+  position: relative;
+  min-height: 176px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 165px;
+
+    &::after {
+      @include wavy;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 252px;
+  }
+}
+
 .page-main__title {
-  @include title;
+  @include wrapper;
+
   font-size: 27px;
   background-color: $color-secondary--lighten;
+  text-align: center;
+  padding-top: 73px;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 49px;
+    padding-top: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 55px;
+    letter-spacing: 0;
+    padding-top: 95px;
+  }
 }
 
 .page-main__desc {
+  @include wrapper;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
+  padding-top: 22px;
+  padding-bottom: 24px;
   color: $color-secondary--light;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    padding-top: 73px;
+    padding-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 225px;
+    padding-right: 225px;
+    padding-top: 123px;
+  }
 }

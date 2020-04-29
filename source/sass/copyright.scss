@@ -1,6 +1,49 @@
+.copyright {
+  color: $color-secondary;
+  padding: 0 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
 .copyright__text {
   font-size: 19px;
   line-height: 18px;
   font-weight: 700;
+  align-self: flex-start;
   color: $color-secondary;
+  padding: 4px 0;
+  margin-right: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding: 4px 30px;
+    margin-right: 0;
+  }
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  font: inherit;
+
+  &:hover .copyright__text,
+  &:focus .copyright__text {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: $color-main--darken;
+  }
+}
+
+.copyright__logo path {
+  fill: $color-main;
 }
