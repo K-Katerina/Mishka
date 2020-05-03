@@ -18,8 +18,6 @@
     padding-top: 72px;
     padding-bottom: 186px;
     background-position-x: 50px;
-    width: 1150px;
-    margin: 0 auto;
   }
 
   &::after {
@@ -28,8 +26,6 @@
 }
 
 .reviews__wrapper {
-  @include wrapper;
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -39,7 +35,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 225px;
+    padding-left: 175px;
   }
 }
 

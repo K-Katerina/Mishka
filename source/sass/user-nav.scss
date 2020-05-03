@@ -12,6 +12,12 @@
   align-items: center;
   border-top: 1px $color-service solid;
 
+  @media (max-width: $mobile-width-only) {
+    &:last-child {
+      border-bottom: 1px $color-service solid;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     border: none;
     border-left: 1px $color-service solid;

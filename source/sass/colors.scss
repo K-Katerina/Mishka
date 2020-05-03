@@ -8,12 +8,13 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: flex-start;
-    padding-bottom: 47px;
+    padding-bottom: 44px;
     padding-top: 32px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 29px;
+    padding-bottom: 46px;
   }
 }
 
@@ -23,12 +24,12 @@
   margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 108px;
+    margin-right: 103px;
     padding-top: 34px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 54px;
+    margin-right: 50px;
     margin-left: 60px;
     padding-top: 37px;
   }
@@ -45,17 +46,21 @@
 }
 
 .colors__item {
-  margin-top: 11px;
-  padding-bottom: 11px;
+  padding-bottom: 10px;
+  padding-top: 11px;
   width: 258px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 13px;
-    padding-left: 26px;
+    padding-left: 22px;
     padding-right: 26px;
+    padding-bottom: 6px;
+    padding-top: 19px;
+    width: 261px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 262px;
+    width: 263px;
+    padding-left: 21px;
+    padding-bottom: 5px;
   }
 }

@@ -12,13 +12,7 @@
   }
 }
 
-.form__set {
-  @include wrapper;
-}
-
 .form__input {
-  @include wrapper;
-
   padding-bottom: 32px;
   display: flex;
   flex-direction: column;
@@ -26,7 +20,8 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: flex-start;
-    padding-top: 21px;
+    padding-top: 11px;
+    padding-bottom: 10px;
 
     &:first-child {
       padding-top: 47px;
@@ -43,8 +38,6 @@
 }
 
 .form__textarea {
-  @include wrapper;
-
   padding-bottom: 5px;
   display: flex;
   flex-direction: column;
@@ -63,8 +56,6 @@
 }
 
 .form__bottom {
-  @include wrapper;
-
   display: flex;
   flex-direction: column;
   padding-top: 6px;

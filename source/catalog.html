@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="wrapper page-header">
       <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
         <a href="index.html" class="main-nav__logo logo">
           <picture>
@@ -80,17 +80,17 @@
 
     <main class="page-main">
       <div class="page-main__title-wrapper">
-        <h1 class="page-main__title">
-          Каталог товаров
+        <h1 class="page-main__title wrapper">
+          Каталог&nbsp;товаров
         </h1>
       </div>
-      <section class="products">
+      <section class="products wrapper">
         <article class="products__item product">
           <a href="more1.html" class="product__more">
             <picture>
-              <source media="(min-width: 1150px)" srcset="./img/photo-hare-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="./img/photo-hare-tablet@1x.jpg">
-              <img src="img/photo-hare-mobile-r@1x.jpg" srcset="./img/photo-hare-mobile@1x.jpg" alt="Ушастый зайчик в голубом комбинезоне" class="product__img">
+              <source media="(min-width: 1150px)" srcset="./img/photo-hare-desktop@1x.jpg 1x, ./img/photo-hare-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/photo-hare-tablet@1x.jpg 1x, ./img/photo-hare-tablet@2x.jpg 2x">
+              <img src="img/photo-hare-mobile@1x.jpg" srcset="./img/photo-hare-mobile@2x.jpg 2x" width="258" height="193" alt="Ушастый зайчик в голубом комбинезоне" class="product__img">
             </picture>
           </a>
           <div class="product__padding">
@@ -120,9 +120,9 @@
         <article class="products__item product">
           <a href="more2.html" class="product__more">
             <picture>
-              <source media="(min-width: 1150px)" srcset="./img/photo-bowl-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="./img/photo-bowl-tablet@1x.jpg">
-              <img src="./img/photo-bowl-mobile-r@1x.jpg" srcset="./img/photo-bowl-mobile@1x.jpg" alt="Пример использования бело-оранжевой корзинки для хранения вещей" class="product__img">
+              <source media="(min-width: 1150px)" srcset="./img/photo-bowl-desktop@1x.jpg 1x, ./img/photo-bowl-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/photo-bowl-tablet@1x.jpg 1x, ./img/photo-bowl-tablet@2x.jpg 2x">
+              <img src="./img/photo-bowl-mobile@1x.jpg" srcset="./img/photo-bowl-mobile@2x.jpg 2x" width="258" height="193" alt="Пример использования бело-оранжевой корзинки для хранения вещей" class="product__img">
             </picture>
           </a>
           <div class="product__padding">
@@ -152,9 +152,9 @@
         <article class="products__item product">
           <a href="more3.html" class="product__more">
             <picture>
-              <source media="(min-width: 1150px)" srcset="./img/photo-toys-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="./img/photo-toys-tablet@1x.jpg">
-              <img src="./img/photo-toys-mobile-r@1x.jpg" srcset="./img/photo-toys-mobile@1x.jpg" alt="Ушастый зайчик в голубом комбинезоне" class="product__img">
+              <source media="(min-width: 1150px)" srcset="./img/photo-toys-desktop@1x.jpg 1x, ./img/photo-toys-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/photo-toys-tablet@1x.jpg 1x, ./img/photo-toys-tablet@2x.jpg 2x">
+              <img src="./img/photo-toys-mobile@1x.jpg" srcset="./img/photo-toys-mobile@2x.jpg 2x" width="258" height="193" alt="Пример использования бело-салатовой корзинки для хранения игрушек" class="product__img">
             </picture>
           </a>
           <div class="product__padding">
@@ -182,16 +182,16 @@
           </div>
         </article>
       </section>
-      <article class="process">
+      <article class="process wrapper">
         <div class="process__wrapper">
           <h2 class="process__title">
             Процесс производства
           </h2>
           <div class="process__container video-container">
             <picture>
-              <source media="(min-width: 1150px)" srcset="./img/video-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg">
-              <img src="./img/video-mobile-r@1x.jpg" srcset="./img/video-mobile@1x.jpg" alt="Видео процесса изготовления корзинки" class="video-container__img">
+              <source media="(min-width: 1150px)" srcset="./img/video-desktop@1x.jpg 1x, ./img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg 1x, ./img/video-tablet@2x.jpg 2x">
+              <img src="./img/video-mobile@1x.jpg" srcset="./img/video-mobile@2x.jpg 2x" width="258" height="148" alt="Видео процесса изготовления корзинки" class="video-container__img">
             </picture>
             <a href="#" class="video-container__play">Воспроизвести</a>
           </div>
@@ -208,7 +208,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper wrapper">
         <a href="#" class="page-footer__logo logo">
           <svg class="logo__img--footer" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="101.615px" height="34.056px" viewBox="0 0 101.615 34.056" enable-background="new 0 0 101.615 34.056" xml:space="preserve">
             <g>
@@ -264,15 +264,15 @@
       <form class="modal-popup__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="modal-popup__wrapper">
           <input type="radio" class="radio__input visually-hidden" id="s" name="size" value="s" checked="">
-          <label for="s" class="radio__label radio--size">
+          <label for="s" class="radio--size">
             S
           </label>
           <input type="radio" class="radio__input visually-hidden" id="m" name="size" value="m">
-          <label for="m" class="radio__label radio--size">
+          <label for="m" class="radio--size">
             M
           </label>
           <input type="radio" class="radio__input visually-hidden" id="l" name="size" value="l">
-          <label for="l" class="radio__label radio--size">
+          <label for="l" class="radio--size">
             L
           </label>
         </div>

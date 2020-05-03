@@ -1,6 +1,4 @@
 .products {
-  @include wrapper;
-
   background-color: $color-secondary--lightest;
   display: flex;
   flex-direction: column;
