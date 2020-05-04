@@ -13,7 +13,7 @@
 }
 
 .form__input {
-  padding-bottom: 32px;
+  padding-bottom: 3px;
   display: flex;
   flex-direction: column;
 
@@ -21,19 +21,20 @@
     flex-direction: row;
     align-items: flex-start;
     padding-top: 11px;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
+    padding-right: 21px;
 
     &:first-child {
-      padding-top: 47px;
+      padding-top: 43px;
     }
 
     &:last-child {
-      padding-bottom: 50px;
+      padding-bottom: 49px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 225px;
+    padding-right: 190px;
   }
 }
 
@@ -77,6 +78,7 @@
   line-height: 16px;
   font-weight: 400;
   padding-bottom: 31px;
+  padding-top: 3px;
   display: inline-block;
   vertical-align: middle;
   color: $color-secondary--light;
@@ -85,7 +87,7 @@
     font-size: 17px;
     line-height: 30px;
     padding-bottom: 0;
-    padding-top: 4px;
+    padding-top: 9px;
   }
 }
 

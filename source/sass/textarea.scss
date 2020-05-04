@@ -19,15 +19,8 @@
   }
 }
 
-.textarea__label {
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: 700;
-  color: $color-secondary;
-}
-
 .textarea__text {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 18px;
   font-weight: 400;
   color: $color-secondary--light;
@@ -46,4 +39,12 @@
   &:hover {
     border: 2px $color-main solid;
   }
+}
+
+textarea::-moz-placeholder {
+  color: transparentize($color-secondary--light, 0.7);
+}
+
+textarea::-webkit-input-placeholder {
+  color: transparentize($color-secondary--light, 0.7);
 }

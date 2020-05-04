@@ -4,6 +4,7 @@
   height: 35px;
   display: flex;
   align-items: center;
+  color: $color-secondary;
 
   @media (min-width: $tablet-width) {
     width: 113px;
@@ -25,13 +26,13 @@
     opacity: 0.6;
   }
 
-  &--footer:hover path,
-  &--footer:focus path {
-    fill: $color-tiffany--darken;
+  &--footer:hover,
+  &--footer:focus {
+    color: $color-main--darken;
   }
 
   &:active,
-  &--footer:active path {
+  &--footer:active {
     opacity: 0.3;
   }
 }

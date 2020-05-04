@@ -70,13 +70,12 @@
 
 .radio--size {
   position: relative;
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 82px;
   height: 52px;
   text-align: center;
-  padding-top: 15px;
-  margin-right: 4px;
   text-transform: uppercase;
   color: $color-secondary;
   font-size: 17px;
@@ -85,7 +84,7 @@
 
   @media (min-width: $tablet-width) {
     width: 112px;
-    margin-right: 5px;
+    height: 52px;
   }
 
   &:hover::before,
@@ -105,7 +104,7 @@
 .radio--size::before {
   content: "";
   position: absolute;
-  top: 24px;
+  top: 26px;
   left: 0;
   width: 82px;
   height: 52px;

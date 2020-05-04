@@ -46,7 +46,6 @@
   }
 
   &:active {
-    background-color: darken($color: $color-secondary--lightest, $amount: 10%);
-    color: $color-main;
+    color: $color-secondary--light;
   }
 }

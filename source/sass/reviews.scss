@@ -12,6 +12,11 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     margin-bottom: 40px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg") no-repeat;
+      background-size: 350px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {

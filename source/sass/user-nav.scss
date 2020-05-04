@@ -53,41 +53,37 @@
     }
   }
 
-  &--search::before {
+  &--search .user-nav__icon {
     content: "";
     position: absolute;
-    left: 2px;
-    top: 4px;
-    background-image: url("../img/icon-search.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    top: 5px;
+    left: 0;
     height: 18px;
     width: 18px;
+    color: $color-secondary;
     opacity: 0.2;
-    background-size: contain;
   }
 
-  &--basket::before {
+  &--basket .user-nav__icon {
     content: "";
     position: absolute;
-    left: 2px;
-    top: 4px;
-    background-image: url("../img/icon-cart.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    height: 18px;
-    width: 18px;
+    top: 3px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    color: $color-secondary;
     opacity: 0.2;
-    background-size: contain;
   }
 
   &:hover,
   &:focus {
-    opacity: 0.6;
+    color: transparentize($color-secondary, 0.4);
+  }
 
-    &::before {
-      opacity: 1;
-    }
+  &:hover .user-nav__icon,
+  &:focus .user-nav__icon {
+    opacity: 1;
+    color: $color-main;
   }
 
   &:active {
