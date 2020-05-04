@@ -10,7 +10,7 @@
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    min-height: 165px;
+    min-height: 224px;
 
     &::after {
       @include wavy;
@@ -31,7 +31,7 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 49px;
-    padding-top: 36px;
+    padding-top: 93px;
   }
 
   @media (min-width: $desktop-width) {

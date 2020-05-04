@@ -78,6 +78,7 @@
   font-weight: 400;
   padding-bottom: 31px;
   display: inline-block;
+  vertical-align: middle;
   color: $color-secondary--light;
 
   @media (min-width: $tablet-width) {
@@ -91,6 +92,7 @@
 .form__submit {
   min-width: 260px;
   display: inline-block;
+  vertical-align: middle;
 
   @media (min-width: $tablet-width) {
     max-width: 320px;

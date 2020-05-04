@@ -26,8 +26,8 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 35px;
-    padding-bottom: 3px;
     font-size: 17px;
+    padding-bottom: 3px;
 
     &:last-child {
       padding-right: 0;
@@ -57,17 +57,5 @@
 
   &:active {
     opacity: 0.3;
-  }
-}
-
-.site-nav__delivery {
-  align-self: center;
-
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
   }
 }

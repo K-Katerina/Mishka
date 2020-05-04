@@ -3,15 +3,19 @@
   line-height: 24px;
   font-weight: 700;
   color: $color-secondary;
-  background-color: transparent;
   border-top: 1px $color-service solid;
+  background-color: transparent;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 50px;
   padding-top: 17px;
 
-  @media (max-width: $tablet-width-only) {
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-width-only) {
     display: none;
   }
 }
@@ -23,6 +27,10 @@
 
   & :last-child {
     padding-right: 0;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    display: none;
   }
 }
 
@@ -47,4 +55,16 @@
   flex-grow: 0;
   padding: 0;
   padding-right: 61px;
+}
+
+.sup-nav__delivery {
+  font-size: 15px;
+  font-weight: 400;
+  max-width: 300px;
+  color: $color-secondary--light;
+  margin-left: auto;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }
