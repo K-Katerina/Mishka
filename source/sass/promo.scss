@@ -56,7 +56,7 @@
     background: url("../img/hero-tablet@1x.jpg") no-repeat 50% 0;
     padding-top: 153px;
     min-height: 626px;
-    
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/hero-tablet@2x.jpg") no-repeat 50% 0;
       background-size: 1150px auto;
