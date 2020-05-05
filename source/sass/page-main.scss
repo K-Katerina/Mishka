@@ -10,7 +10,7 @@
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    min-height: 165px;
+    min-height: 224px;
 
     &::after {
       @include wavy;
@@ -23,18 +23,15 @@
 }
 
 .page-main__title {
-  @include wrapper;
-
   font-size: 27px;
   background-color: $color-secondary--lighten;
   text-align: center;
   padding-top: 73px;
-  width: 320px;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 49px;
-    padding-top: 36px;
+    padding-top: 93px;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,7 +43,6 @@
 }
 
 .page-main__desc {
-  @include wrapper;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;

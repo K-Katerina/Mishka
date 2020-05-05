@@ -38,12 +38,12 @@
     opacity: 0.3;
   }
 
-  &:hover path,
-  &:focus path {
-    fill: $color-main--darken;
+  &:hover .copyright__logo,
+  &:focus .copyright__logo {
+    color: $color-main--darken;
   }
 }
 
-.copyright__logo path {
-  fill: $color-main;
+.copyright__logo {
+  color: $color-main;
 }

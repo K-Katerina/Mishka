@@ -1,5 +1,6 @@
 .input {
   display: block;
+  position: relative;
 }
 
 .input__title {
@@ -38,7 +39,6 @@
   font-weight: 400;
   color: $color-secondary--light;
   background-color: transparent;
-  position: relative;
 
   width: 100%;
   padding: 16px 35px 16px 0;
@@ -50,31 +50,78 @@
     padding-top: 15px;
     font-size: 19px;
   }
+}
 
-  &--tel::after {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 40px;
-    width: 24px;
-    height: 24px;
-    background: url("../img/icon-phone.svg") no-repeat 50% 50%;
-    background-size: 24px 24px;
+.input:hover .input__text,
+.input:focus .input__text {
+  border-bottom: 2px $color-main solid;
+}
+
+.input:hover .input__icon,
+.input:focus .input__icon {
+  opacity: 1;
+  color: $color-main;
+}
+
+.input__icon {
+  color: $color-secondary;
+  opacity: 0.2;
+  position: relative;
+
+  right: 0;
+  top: 17px;
+
+  &--tel {
+    height: 25px;
+    width: 45px;
   }
 
-  &--email::after {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 40px;
-    width: 24px;
-    height: 24px;
-    background: url("../img/icon-mail.svg") no-repeat 50% 50%;
-    background-size: 24px 24px;
+  &--email {
+    height: 33px;
+    width: 45px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    align-self: flex-end;
+    bottom: 42px;
+    top: auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: 50px;
+    top: 17px;
+
+    &--tel {
+      height: 25px;
+      width: 45px;
+    }
+
+    &--email {
+      height: 33px;
+      width: 45px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 38px;
+    top: 17px;
+
+    &--tel {
+      height: 25px;
+      width: 45px;
+    }
+
+    &--email {
+      height: 33px;
+      width: 45px;
+    }
   }
 }
 
-.input__text:hover,
-.input__text:focus {
-  border-bottom: 2px $color-main solid;
+input::-moz-placeholder {
+  color: transparentize($color-secondary--light, 0.7);
+}
+
+input::-webkit-input-placeholder {
+  color: transparentize($color-secondary--light, 0.7);
 }

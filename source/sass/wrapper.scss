@@ -1,0 +1,17 @@
+
+.wrapper {
+  position: relative;
+  min-width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 0 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 50px;
+    width: 1150px;
+  }
+}

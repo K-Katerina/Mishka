@@ -3,6 +3,32 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   height: 455px;
+  background-size: 320px auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/map-mobile@2x.jpg") no-repeat 50% 50%;
+    background-size: 320px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/map-tablet@1x.jpg") no-repeat 50% 50%;
+    background-size: 768px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/map-tablet@2x.jpg") no-repeat 50% 50%;
+      background-size: 768px auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../img/map-desktop@1x.jpg") no-repeat 50% 50%;
+    background-size: 471px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/map-desktop@2x.jpg") no-repeat 50% 50%;
+      background-size: 471px auto;
+    }
+  }
 }
 
 .map__iframe {

@@ -4,7 +4,6 @@
   line-height: 24px;
   font-weight: 700;
   color: $color-secondary--lightest;
-  padding: 0;
   display: flex;
 }
 
@@ -15,10 +14,20 @@
 
   &:nth-child(2n) {
     background-color: $color-main--dark;
+
+    &:hover,
+    &:focus {
+      background-color: $color-main--darken;
+    }
   }
 
   &:nth-child(2n+1) {
     background-color: $color-main;
+
+    &:hover,
+    &:focus {
+      background-color: $color-main--bright;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -31,12 +40,12 @@
     }
   }
 
-  &:hover path,
-  &:focus path {
+  &:hover .menu-promo__icon,
+  &:focus .menu-promo__icon {
     opacity: 0.7;
   }
 
-  &:active path {
+  &:active .menu-promo__icon {
     opacity: 0.3;
   }
 
@@ -65,7 +74,7 @@
 }
 
 
-.menu-promo__icon path {
-  fill: $color-main--darkest;
+.menu-promo__icon {
+  color: $color-main--darkest;
   opacity: 0.5;
 }

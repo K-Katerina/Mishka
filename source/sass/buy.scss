@@ -2,17 +2,18 @@
   cursor: pointer;
 
 
-  &:hover .buy__path,
-  &:focus .buy__path {
+  &:hover .buy__icon,
+  &:focus .buy__icon {
     opacity: 1;
+    color: $color-main;
   }
 
-  &:active .buy__path {
+  &:active .buy__icon {
     opacity: 0.3;
   }
 }
 
-.buy__path {
+.buy__icon {
   color: $color-secondary;
   opacity: 0.2;
 }

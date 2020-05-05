@@ -3,12 +3,12 @@
 
   display: flex;
   flex-direction: column;
-  padding-bottom: 25px;
+  padding-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: flex-start;
-    padding-bottom: 40px;
+    padding-bottom: 42px;
   }
 }
 
@@ -17,13 +17,13 @@
   margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 121px;
+    margin-right: 125px;
     padding-top: 34px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 64px;
-    margin-right: 63px;
+    margin-right: 68px;
   }
 }
 
@@ -38,11 +38,12 @@
 }
 
 .types__item {
-  padding: 7px 0 7px 0;
+  padding-top: 5px;
   min-width: 270px;
 
   @media (min-width: $tablet-width) {
     width: 400px;
-    padding: 16px;
+    padding-top: 16px;
+    padding-left: 6px;
   }
 }

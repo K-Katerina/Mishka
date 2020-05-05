@@ -1,37 +1,38 @@
 .logo {
   cursor: pointer;
-  max-width: 86px;
+  width: 86px;
   height: 35px;
+  display: flex;
+  align-items: center;
+  color: $color-secondary;
 
   @media (min-width: $tablet-width) {
-    max-width: 113px;
+    width: 113px;
+    height: 46px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 150px;
+    width: 148px;
+    height: 73px;
   }
 }
 
 .logo__img {
-  padding-top: 4px;
-  max-width: 150px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 0;
-  }
+  width: 100%;
+  height: auto;
 
   &:hover,
   &:focus {
     opacity: 0.6;
   }
 
-  &--footer:hover path,
-  &--footer:focus path {
-    fill: $color-tiffany--darken;
+  &--footer:hover,
+  &--footer:focus {
+    color: $color-main--darken;
   }
 
   &:active,
-  &--footer:active path {
+  &--footer:active {
     opacity: 0.3;
   }
 }
