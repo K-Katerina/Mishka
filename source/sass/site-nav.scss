@@ -10,8 +10,11 @@
   display: flex;
   flex-grow: 1;
   align-items: center;
-  height: 78px;
   border-top: 1px $color-service solid;
+
+  @media (max-width: $mobile-width-only) {
+    height: 78px;
+  }
 
   @media (min-width: $tablet-width) {
     border: none;

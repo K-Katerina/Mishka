@@ -50,6 +50,10 @@
     padding-top: 15px;
     font-size: 19px;
   }
+
+  &--error {
+    border-bottom: 2px $color-error solid;
+  }
 }
 
 .input:hover .input__text,

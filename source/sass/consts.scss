@@ -4,10 +4,17 @@ $color-tiffany--dark:        #56c3b2;
 $color-tiffany--darken:      #46c1ae;
 $color-tiffany--darkest:     #149080;
 
+$color-red:                  #ff5353;
 $color-black:                #000000;
-$color-grey--light:          #444444;
-$color-grey--lighten:        #ececec;
-$color-grey--lightest:       #f1f1f1;
+
+$color-grey:                 #444444;
+$color-grey--light:          #8d8d8d;
+$color-grey--lighten:        #c7c7c7;
+$color-grey--lightest:       #e5e5e5;
+
+$color-white--darkest:       #ececec;
+$color-white--darken:        #f1f1f1;
+$color-white--dark:          #fafafa;
 $color-white:                #ffffff;
 
 $color-main:                 $color-tiffany;
@@ -17,11 +24,18 @@ $color-main--darken:         $color-tiffany--darken;
 $color-main--darkest:        $color-tiffany--darkest;
 
 $color-secondary:            $color-black;
-$color-secondary--light:     $color-grey--light;
-$color-secondary--lighten:   $color-grey--lightest;
+$color-secondary--light:     $color-grey;
+$color-secondary--lighten:   $color-white--darken;
 $color-secondary--lightest:  $color-white;
 
-$color-service:              $color-grey--lighten;
+$color-service--darkest:     $color-grey--light;
+$color-service--darken:      $color-grey--lighten;
+$color-service--dark:        $color-grey--lightest;
+$color-service:              $color-white--darkest;
+
+$color-index:                $color-white--dark;
+
+$color-error:                $color-red;
 
 $mobile-width-only: 767px;
 $tablet-width-only: 1149px;

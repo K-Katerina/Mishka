@@ -20,7 +20,7 @@
   }
 
   &:active {
-    color: lighten($color: $color-secondary--light, $amount: 28%);
+    color: $color-service--darkest;
   }
 }
 
