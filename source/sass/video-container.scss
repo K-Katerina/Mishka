@@ -5,7 +5,8 @@
   line-height: 0;
 
   @media (min-width: $desktop-width) {
-    max-width: 680px;
+    width: 680px;
+    position: absolute;
   }
 }
 
