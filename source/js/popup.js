@@ -1,5 +1,5 @@
 var linkItems = document.querySelectorAll(".modal-button");
-if (linkItems) {
+if (linkItems.length) {
 
   var popup = document.querySelector(".modal-popup");
   var back = document.querySelector(".modal-popup--back");
@@ -26,7 +26,6 @@ if (linkItems) {
 
   for (var i = 0; i < linkItems.length; i++) {
     linkItems[i].addEventListener("click", function (evt) {
-      debugger;
       evt.preventDefault();
       popup.classList.add("modal-popup--show");
       back.classList.add("modal-popup--show");
