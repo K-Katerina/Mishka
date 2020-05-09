@@ -16,6 +16,7 @@
     margin-right: 48px;
     max-width: 318px;
     margin-bottom: 30px;
+    overflow: hidden;
 
     &:nth-child(3n) {
       margin-right: 0;
@@ -79,6 +80,7 @@
 
 .product__padding {
   padding: 28px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     padding: 25px;

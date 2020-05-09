@@ -7,8 +7,9 @@
       HTML Academy: Mishka | Каталог
     </title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="css/normalize.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
 
   <body>
@@ -193,7 +194,7 @@
               <source type="image/webp" srcset="./img/video-mobile@1x.webp 1x, ./img/video-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="./img/video-desktop@1x.jpg 1x, ./img/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg 1x, ./img/video-tablet@2x.jpg 2x">
-              <img src="./img/video-mobile@1x.jpg" srcset="./img/video-mobile@2x.jpg 2x" width="258" height="148" alt="Видео процесса изготовления корзинки" class="video-container__img">
+              <img src="./img/video-mobile@1x.jpg" srcset="./img/video-mobile@2x.jpg 2x" width="258" height="148" alt="Видео процесса изготовления корзинки, которое еще не сняли" class="video-container__img">
             </picture>
             <a href="#" class="video-container__play">Воспроизвести</a>
           </div>
@@ -272,11 +273,9 @@
         <button type="submit" class="modal-popup__btn button--popup">Добавить</button>
       </form>
     </section>
+    <div class="modal-popup--back"></div>
 
-    <div class="modal--back"></div>
-    <script src="./js/toggle.js"></script>
-    <script src="./js/popup.js"></script>
-    <script src="./js/svg4everybody.min.js"></script>
+    <script src="js/bundle.min.js"></script>
     <script>svg4everybody();</script>
   </body>
 </html>
