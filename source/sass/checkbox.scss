@@ -47,7 +47,7 @@
 }
 
 .checkbox__control:active + .checkbox__label::before {
-  border: 2px lighten($color: $color-secondary--light, $amount: 50%) solid;
+  border: 2px $color-service--darken solid;
 }
 
 .checkbox__control:checked + .checkbox__label::after {

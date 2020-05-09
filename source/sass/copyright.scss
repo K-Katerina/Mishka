@@ -17,8 +17,12 @@
   margin-right: 27px;
 
   @media (min-width: $tablet-width) {
-    padding: 4px 30px;
+    padding: 5px 30px;
     margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 8px 30px;
   }
 }
 

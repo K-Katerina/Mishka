@@ -23,7 +23,7 @@
 }
 
 .page-footer__copyright {
-  border-top: 1px darken($color: $color-service, $amount: 5%) solid;
+  border-top: 1px $color-service--dark solid;
   padding-top: 21px;
   padding-bottom: 20px;
   max-width: 320px;

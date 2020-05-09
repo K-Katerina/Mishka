@@ -13,6 +13,8 @@
   border-top: 1px $color-service solid;
 
   @media (max-width: $mobile-width-only) {
+    height: 78px;
+
     &:last-child {
       border-bottom: 1px $color-service solid;
     }

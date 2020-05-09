@@ -1,5 +1,5 @@
 .promo {
-  background-color: lighten($color: $color-secondary--lighten, $amount: 3%);
+  background-color: $color-index;
   min-height: 488px;
   position: relative;
   margin-bottom: 27px;
@@ -45,7 +45,7 @@
   background: url("../img/hero-mobile@1x.jpg") no-repeat 50% -18px;
   padding-top: 70px;
   padding-bottom: 30px;
-  min-height: 282px;
+  min-height: 281px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background: url("../img/hero-mobile@2x.jpg") no-repeat 50% -18px;

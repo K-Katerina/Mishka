@@ -12,6 +12,7 @@
   @media (min-width: $desktop-width) {
     padding-top: 27px;
     max-width: 1150px;
+    min-height: 482px;
     margin-bottom: 104px;
   }
 }
@@ -34,7 +35,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     flex-wrap: wrap;
-    max-height: 630px;
+    align-content: flex-end;
   }
 }
 
@@ -102,7 +103,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 45px;
+    padding-bottom: 46px;
   }
 }
 
@@ -117,7 +118,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    padding-bottom: 10px;
+    padding-bottom: 59px;
     padding-left: 81px;
     padding-right: 57px;
     max-width: 368px;

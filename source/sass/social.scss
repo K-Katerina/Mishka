@@ -19,11 +19,11 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    padding-top: 9px;
+    padding-top: 12px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 12px;
+    padding-top: 15px;
     margin: 0 5px;
   }
 }
