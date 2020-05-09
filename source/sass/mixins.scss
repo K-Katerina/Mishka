@@ -55,14 +55,12 @@
   content: "";
   position: absolute;
   bottom: 0;
+  left: 0;
   right: 0;
   background-repeat: repeat-x;
   background-image: url("../img/bg-zigzag-line.svg");
   height: 7px;
-  width: 100vw;
-  display: block;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
   background-size: contain;
 
   @media (min-width: $tablet-width) {
@@ -71,9 +69,8 @@
 
   @media (min-width: $desktop-width) {
     height: 21px;
-    max-width: 1050px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 1050px;
+    margin: 0 auto;
   }
 }
 
