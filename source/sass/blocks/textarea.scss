@@ -41,10 +41,10 @@
   }
 }
 
-textarea::-moz-placeholder {
+.textarea__text::-moz-placeholder {
   color: transparentize($color-secondary--light, 0.7);
 }
 
-textarea::-webkit-input-placeholder {
+.textarea__text::-webkit-input-placeholder {
   color: transparentize($color-secondary--light, 0.7);
 }

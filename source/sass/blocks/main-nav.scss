@@ -139,11 +139,11 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .main-nav--closed .main-nav--group {
+  .main-nav--closed .main-nav__group {
     display: none;
   }
 
-  .main-nav--nojs .main-nav--group {
+  .main-nav--nojs .main-nav__group {
     display: flex;
   }
 

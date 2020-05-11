@@ -22,6 +22,16 @@
       margin-right: 0;
     }
   }
+
+  &:hover,
+  &:focus {
+    transition: 0.3s ease;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .product__title {
