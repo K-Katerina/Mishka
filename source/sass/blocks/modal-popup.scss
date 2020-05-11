@@ -16,20 +16,8 @@
 
   @media (min-width: $tablet-width) {
     width: 568px;
-    padding: 29px 107px;
+    padding: 33px 107px;
   }
-}
-
-.modal-popup--back {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 5;
-  background: $color-secondary--lightest;
-  opacity: 0.9;
-  display: none;
 }
 
 .modal-popup--show {
@@ -65,17 +53,18 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
+    padding-bottom: 18px;
   }
 }
 
 .modal-popup__wrapper {
-  margin-bottom: 32px;
+  margin-bottom: 23px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 29px;
+    margin-bottom: 7px;
   }
 }

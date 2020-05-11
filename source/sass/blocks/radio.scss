@@ -68,7 +68,7 @@
   }
 }
 
-.radio--size {
+.radio__size {
   position: relative;
   display: flex;
   align-items: center;
@@ -97,11 +97,11 @@
   }
 }
 
-.radio__input:checked + .radio--size::before {
+.radio__input:checked + .radio__size::before {
   border: 2px $color-main solid;
 }
 
-.radio--size::before {
+.radio__size::before {
   content: "";
   position: absolute;
   top: 26px;

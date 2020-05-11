@@ -2,7 +2,7 @@ var linkItems = document.querySelectorAll(".modal-button");
 if (linkItems.length) {
 
   var popup = document.querySelector(".modal-popup");
-  var back = document.querySelector(".modal-popup--back");
+  var back = document.querySelector(".modal-back");
   var form = popup && popup.querySelector("form");
 
   back.addEventListener("click", function (evt) {

@@ -13,7 +13,7 @@
     padding-top: 27px;
     max-width: 1150px;
     min-height: 482px;
-    margin-bottom: 104px;
+    margin-bottom: 105px;
   }
 }
 
@@ -25,6 +25,7 @@
 
   &:hover,
   &:focus {
+    transition: 0.3s ease;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   }
 

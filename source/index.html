@@ -27,7 +27,7 @@
             Меню
           </span>
         </button>
-        <div class="main-nav__site site-nav main-nav--group">
+        <div class="main-nav__site site-nav main-nav__group">
           <span class="site-nav__text">
             <a href="catalog.html" class="site-nav__link">
               Каталог товаров
@@ -39,7 +39,7 @@
             </a>
           </span>
         </div>
-        <div class="main-nav__user user-nav main-nav--group">
+        <div class="main-nav__user user-nav main-nav__group">
           <span class="user-nav__text">
             <a href="#" class="user-nav__link user-nav__link--search">
               <svg class="user-nav__icon" width="18" height="18"><use xlink:href="./img/sprite.svg#icon-search"></use></svg>
@@ -251,7 +251,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper wrapper">
         <a href="#" class="page-footer__logo logo">
-          <svg class="logo__img--footer" width="102" height="34"><use xlink:href="./img/sprite.svg#logo-footer"></use></svg>
+          <svg class="logo__img logo__img--footer" width="102" height="34"><use xlink:href="./img/sprite.svg#logo-footer"></use></svg>
         </a>
         <ul class="page-footer__social social">
           <li class="social__item">
@@ -295,24 +295,31 @@
       <p class="modal-popup__info">Выберите размер:</p>
       <form class="modal-popup__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="modal-popup__wrapper">
-          <input type="radio" class="radio__input visually-hidden" id="s" name="size" value="s" checked="">
-          <label for="s" class="radio--size">
-            S
+          <label for="s" class="radio">
+            <input type="radio" class="radio__input visually-hidden" id="s" name="size" value="s" checked="">
+            <span class="radio__size">
+              S
+            </span>
           </label>
-          <input type="radio" class="radio__input visually-hidden" id="m" name="size" value="m">
-          <label for="m" class="radio--size">
-            M
+          <label for="m" class="radio">
+            <input type="radio" class="radio__input visually-hidden" id="m" name="size" value="m">
+            <span class="radio__size">
+              M
+            </span>
           </label>
-          <input type="radio" class="radio__input visually-hidden" id="l" name="size" value="l">
-          <label for="l" class="radio--size">
-            L
+          <label for="l" class="radio">
+            <input type="radio" class="radio__input visually-hidden" id="l" name="size" value="l">
+            <span class="radio__size">
+              L
+            </span>
           </label>
         </div>
-        <button type="submit" class="modal-popup__btn button--popup">Добавить</button>
+        <button type="submit" class="modal-popup__btn button button--popup">Добавить</button>
       </form>
     </section>
 
-    <div class="modal-popup--back"></div>
+    <div class="modal-back"></div>
+
     <script src="js/bundle.min.js"></script>
     <script>svg4everybody();</script>
   </body>

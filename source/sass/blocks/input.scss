@@ -122,10 +122,10 @@
   }
 }
 
-input::-moz-placeholder {
+.input__text::-moz-placeholder {
   color: transparentize($color-secondary--light, 0.7);
 }
 
-input::-webkit-input-placeholder {
+.input__text::-webkit-input-placeholder {
   color: transparentize($color-secondary--light, 0.7);
 }
