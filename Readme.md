@@ -1,4 +1,4 @@
-# Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Личный проект [«Мишка»](https://k-katerina.github.io/1052393-mishka-19/) [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Катерина Коротышева](https://up.htmlacademy.ru/adaptive/19/user/1052393).
 * Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela).

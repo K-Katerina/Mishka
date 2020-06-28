@@ -13,6 +13,8 @@ var jsconcat = require("gulp-concat");
 var rename = require("gulp-rename");
 var postcss = require("gulp-postcss");
 var del = require("del");
+const ghPages = require('gh-pages');
+const path = require('path');
 
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
@@ -87,6 +89,11 @@ gulp.task("webp", gulp.series("images", function () {
 }));
 
 gulp.task("build", gulp.series("clean", "copy-static", "webp", "html", "css", "js"));
+
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './build'), cb);
+}
+exports.deploy = deploy;
 
 gulp.task("start", gulp.series("build", function () {
   server.init({
