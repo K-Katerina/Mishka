@@ -15,4 +15,5 @@
 * Используемый шрифт: Open Sans.
 
 [Сертификат: Профессиональный HTML и CSS](https://assets.htmlacademy.ru/certificates/intensive/155/1052393.pdf?1584514156)
+
 [Итоговый сертификат профессии Frontend React Developer](https://assets.htmlacademy.ru/certificates/profession/13/1052393.pdf?1605687308)
