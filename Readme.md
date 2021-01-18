@@ -14,6 +14,6 @@
 * Типографика: частично определена в макете (прочее — на усмотрение разработчика).
 * Используемый шрифт: Open Sans.
 
-[Сертификат: Профессиональный HTML и CSS](https://assets.htmlacademy.ru/certificates/intensive/155/1052393.pdf?1584514156)
+[Сертификат: Профессиональный HTML и CSS](https://assets.htmlacademy.ru/certificates/intensive/157/1052393.pdf?1589272402)
 
 [Итоговый сертификат профессии Frontend React Developer](https://assets.htmlacademy.ru/certificates/profession/13/1052393.pdf?1605687308)
